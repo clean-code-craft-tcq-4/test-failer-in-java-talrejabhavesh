@@ -1,6 +1,6 @@
 package tshirts;
 
-public class Tshirts {
+public class tshirts {
  public static String size(int cms) {
    
       if(cms>=32 && cms < 38) {
