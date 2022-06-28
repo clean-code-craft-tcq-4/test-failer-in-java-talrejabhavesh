@@ -15,7 +15,7 @@ public class Tshirts {
   }
 
   public static void main(String[] args) { 
-    TshirtsTest test= new TshirtsTest();
+     TshirtsTest test= new TshirtsTest();
     test.sizeCheck();
   }
 }
