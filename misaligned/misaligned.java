@@ -79,7 +79,7 @@ public class misaligned {
     createReferenceManualMap();
     List<String> colorPair=getColorPair(3);
     assert(colorPair.get(0)=="White");
-    assert(colorPair.get(0)=="Green");
+    assert(colorPair.get(1)=="Green");
     System.out.println("All is well");
   }
 }
