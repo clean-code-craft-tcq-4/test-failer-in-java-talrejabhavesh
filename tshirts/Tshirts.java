@@ -1,4 +1,4 @@
-package Tshirts;
+package tshirts;
 
 public class Tshirts {
  public static String size(int cms) {
