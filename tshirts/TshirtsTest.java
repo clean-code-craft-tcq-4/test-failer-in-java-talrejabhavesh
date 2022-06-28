@@ -1,4 +1,4 @@
-package Tshirts;
+package tshirts;
 
 public class TshirtsTest {
 
