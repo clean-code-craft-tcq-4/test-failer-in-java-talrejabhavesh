@@ -15,7 +15,14 @@ public class tshirts {
   }
 
   public static void main(String[] args) { 
-     TshirtsTest test= new TshirtsTest();
-    test.sizeCheck();
+    testSizeCheck();
+  }
+ 
+ public static void testSizeCheck() {
+    assertTrue(size(37) == "S");
+    assertTrue(size(38) == "M");
+    assertTrue(size(40) == "M");
+    assertTrue(size(43) == "L");
+    System.out.println("All is well");
   }
 }
