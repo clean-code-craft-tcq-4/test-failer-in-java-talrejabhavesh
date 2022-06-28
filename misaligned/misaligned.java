@@ -1,5 +1,11 @@
 package misaligned;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
 public class misaligned {
     public static int  firstSeparator = 0; 
   public static int  lastSeparator = 0;
@@ -61,17 +67,17 @@ public class misaligned {
 
 
   public static void main(String[] args) {
-    Misaligned.printColorMap();
+    printColorMap();
     colorManualTest();
   }
 
   
   
   public static void colorManualTest() {
-    int result = Misaligned.printColorMap();
+    int result = printColorMap();
     assert (result == 25);
-    Misaligned.createReferenceManualMap();
-    List<String> colorPair=Misaligned.getColorPair(3);
+    createReferenceManualMap();
+    List<String> colorPair=getColorPair(3);
     assert(colorPair.get(0)=="White");
     assert(colorPair.get(0)=="Green");
     System.out.println("All is well");
