@@ -19,10 +19,10 @@ public class tshirts {
   }
  
  public static void testSizeCheck() {
-    assertTrue(size(37) == "S");
-    assertTrue(size(38) == "M");
-    assertTrue(size(40) == "M");
-    assertTrue(size(43) == "L");
+    assert(size(37) == "S");
+    assert(size(38) == "M");
+    assert(size(40) == "M");
+    assert(size(43) == "L");
     System.out.println("All is well");
   }
 }
