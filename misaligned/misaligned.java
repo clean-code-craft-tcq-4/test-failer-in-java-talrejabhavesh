@@ -1,8 +1,7 @@
 package misaligned;
 
-public class Misaligned {
-  
-  public static int  firstSeparator = 0; 
+public class misaligned {
+    public static int  firstSeparator = 0; 
   public static int  lastSeparator = 0;
   public static int  numberOfMisaligned = 0;
   public static String majorColors[] = { "White", "Red", "Black", "Yellow", "Violet" };
@@ -62,8 +61,19 @@ public class Misaligned {
 
 
   public static void main(String[] args) {
-    MisalignedTest test=new MisalignedTest();
-    test.AlignmentTest();
+    Misaligned.printColorMap();
+    colorManualTest();
   }
 
+  
+  
+  public static void colorManualTest() {
+    int result = Misaligned.printColorMap();
+    assert (result == 25);
+    Misaligned.createReferenceManualMap();
+    List<String> colorPair=Misaligned.getColorPair(3);
+    assert(colorPair.get(0)=="White");
+    assert(colorPair.get(0)=="Green");
+    System.out.println("All is well");
+  }
 }
