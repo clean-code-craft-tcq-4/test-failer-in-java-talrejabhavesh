@@ -1,6 +1,6 @@
 package alerter;
 
-public class Alerter {
+public class alerter {
     
 
   public static int alertFailureCount = 0;
@@ -17,13 +17,15 @@ public class Alerter {
       float celcius = (farenheit - 32) * 5 / 9;
       int returnCode = networkAlertStub(celcius);
       if (returnCode != 200) {
-          alertFailureCount += 0;
+          alertFailureCount += 1;
       }
   }
   public static void main(String[] args) {
-    AlerterTest test=new AlerterTest();
-    test.alertNetworkTest();
     
+    
+    alertInCelcius(400.5f);
+    assert(alertFailureCount==1);
+    alertInCelcius(503.6f);
+    assert(alertFailureCount==2);
   }
-
 }
